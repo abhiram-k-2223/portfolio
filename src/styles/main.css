@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --c-paper: #000000;
+  --c-ink: #edefe9;
+  --c-muted: #9199a8;
+  --c-rule: #2a3140;
+  --c-pnl: #7cd99f;
+  --c-tape: #edefe9;
+  --c-tape-text: #0b0d12;
+  --c-tape-pnl: #1b7a44;
+}
+
+.light {
+  color-scheme: light;
+  --c-paper: #f4f5f1;
+  --c-ink: #151a26;
+  --c-muted: #5b6372;
+  --c-rule: #dfe2da;
+  --c-pnl: #1b7a44;
+  --c-tape: #151a26;
+  --c-tape-text: #f4f5f1;
+  --c-tape-pnl: #80d9a6;
+}
+
+@theme {
+  --color-paper: var(--c-paper);
+  --color-ink: var(--c-ink);
+  --color-muted: var(--c-muted);
+  --color-rule: var(--c-rule);
+  --color-pnl: var(--c-pnl);
+  --color-tape: var(--c-tape);
+  --color-tape-text: var(--c-tape-text);
+  --color-tape-pnl: var(--c-tape-pnl);
+
+  --font-display: "Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Fragment Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --animate-tape: tape 48s linear infinite;
+  --animate-cursor: nudge 1.1s steps(2, jump-none) infinite;
+
+  @keyframes tape {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes nudge {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-display antialiased;
+    font-size: 17px;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-pnl);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@keyframes row-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@layer components {
+  .blotter-row {
+    opacity: 0;
+    animation: row-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: var(--d, 0s);
+  }
+
+  .tape-track {
+    display: flex;
+    width: max-content;
+    animation: tape 48s linear infinite;
+  }
+
+  .tape-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}

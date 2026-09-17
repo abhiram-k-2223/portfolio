@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <title>Abhiram Kamsali — AI/ML engineer & data analyst</title>
+    <meta
+      name="description"
+      content="Abhiram Kamsali builds autonomous systems that execute and then prove themselves: production RAG, agentic pipelines, and trading bots measured by live fills, backtests, and audit trails."
+    />
+    <meta property="og:title" content="Abhiram Kamsali — AI/ML engineer & data analyst" />
+    <meta
+      property="og:description"
+      content="Autonomous systems that execute, then prove themselves. Memecoin snipers, quant research, fraud response networks, and market-intelligence terminals — all with the numbers."
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f4f5f1'/%3E%3Crect x='4' y='4' width='12' height='12' fill='%23151a26'/%3E%3Crect x='16' y='16' width='12' height='12' fill='%231b7a44'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>html{background-color:#000}html.light{background-color:#f4f5f1}</style>
+    <script>
+      try {
+        if (localStorage.getItem('theme') === 'light')
+          document.documentElement.classList.add('light')
+      } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-ink focus:px-4 focus:py-2 focus:text-paper focus:outline-pnl"
+      >Skip to content</a
+    >
+
+    <header class="sticky top-0 z-40 border-b border-rule bg-paper">
+      <div
+        class="mx-auto flex h-14 max-w-[1100px] items-center justify-between px-5 sm:px-8"
+      >
+        <a href="#top" class="text-[15px] font-semibold tracking-tight"
+          >abhiram kamsali</a
+        >
+        <nav aria-label="sections" class="hidden items-center gap-7 sm:flex">
+          <a
+            href="#book"
+            class="text-[14px] text-muted transition-colors hover:text-ink"
+            >book</a
+          >
+          <a
+            href="#record"
+            class="text-[14px] text-muted transition-colors hover:text-ink"
+            >record</a
+          >
+          <a
+            href="#toolchain"
+            class="text-[14px] text-muted transition-colors hover:text-ink"
+            >toolchain</a
+          >
+          <a
+            href="#desk"
+            class="text-[14px] text-muted transition-colors hover:text-ink"
+            >the desk</a
+          >
+        </nav>
+        <div class="flex items-center gap-5">
+          <a href="mailto:abhiramk2305@gmail.com" class="text-[14px] sm:hidden"
+            >email</a
+          >
+          <button
+            id="theme-toggle"
+            type="button"
+            aria-label="toggle color theme"
+            aria-pressed="false"
+            class="font-mono text-[13px] text-muted transition-colors hover:text-ink"
+            >go light</button
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="scroll-mt-14">
+        <div class="mx-auto max-w-[1100px] px-5 pt-16 pb-8 sm:px-8 sm:pt-24">
+          <h1
+            class="text-[clamp(3rem,9vw,6rem)] font-bold leading-[0.95] tracking-[-0.03em]"
+          >
+            Abhiram<br />Kamsali
+          </h1>
+          <p
+            class="mt-8 max-w-[68ch] text-lg leading-relaxed text-ink/90 sm:text-xl"
+          >
+            AI/ML engineer and data analyst building autonomous systems that
+            execute, then prove themselves. I work in agentic pipelines and
+            trading bots, and I measure every result the hard way: live fills,
+            backtests, replay, audit trails.
+          </p>
+          <p
+            class="mt-6 font-mono text-[13px] leading-6 text-muted"
+            aria-label="contact"
+          >
+            <a
+              href="mailto:abhiramk2305@gmail.com"
+              class="underline decoration-ink/40 underline-offset-4 hover:text-pnl hover:decoration-pnl"
+              >abhiramk2305@gmail.com</a
+            >
+            <span class="mx-2">/</span>
+            <a
+              href="https://github.com/abhiram-k-2223"
+              class="underline decoration-ink/40 underline-offset-4 hover:text-pnl hover:decoration-pnl"
+              >github.com/abhiram-k-2223</a
+            >
+            <span class="mx-2">/</span>
+            <a
+              href="https://www.linkedin.com/in/abhiram-kamsali-6ba7a0256/"
+              class="underline decoration-ink/40 underline-offset-4 hover:text-pnl hover:decoration-pnl"
+              >linkedin.com/in/abhiram-kamsali-6ba7a0256</a
+            >
+          </p>
+        </div>
+
+        <div
+          class="mx-auto max-w-[1100px] px-5 pt-8 pb-10 sm:px-8 sm:pt-12"
+          aria-label="performance record"
+        >
+          <div class="border-t border-ink/20">
+            <div
+              class="hidden grid-cols-[180px_1fr_auto] gap-6 pt-6 pb-2 font-mono text-[12px] text-muted sm:grid"
+            >
+              <p>position</p>
+              <p>what was measured</p>
+              <p class="text-right">result</p>
+            </div>
+
+            <div class="blotter-row grid gap-1 sm:grid-cols-[180px_1fr_auto] sm:gap-6 py-5 sm:pt-6 sm:pb-5" style="--d:0s">
+              <p class="font-mono text-[14px]">BULLET</p>
+              <p class="text-[15px] leading-6 text-muted">
+                782 closed trades over a 24 h paper session, from a $2,000 seed
+              </p>
+              <p class="font-mono text-[16px] text-pnl tabular sm:text-right">
+                +$46,931
+              </p>
+            </div>
+
+            <div class="blotter-row grid gap-1 sm:grid-cols-[180px_1fr_auto] sm:gap-6 py-5 sm:pt-6 sm:pb-5" style="--d:0.12s">
+              <p class="font-mono text-[14px]">QUANT</p>
+              <p class="text-[15px] leading-6 text-muted">
+                1,331 parameter combinations swept, UNI/SUSHI pairs reversion
+              </p>
+              <p class="font-mono text-[16px] text-pnl tabular sm:text-right">
+                +461% / 3&nbsp;y
+              </p>
+            </div>
+
+            <div class="blotter-row grid gap-1 sm:grid-cols-[180px_1fr_auto] sm:gap-6 py-5 sm:pt-6 sm:pb-5" style="--d:0.24s">
+              <p class="font-mono text-[14px]">AFRDN</p>
+              <p class="text-[15px] leading-6 text-muted">
+                6M+ PaySim transactions across the fraud-response network
+              </p>
+              <p class="font-mono text-[16px] text-pnl tabular sm:text-right">
+                99%+ ROC-AUC
+              </p>
+            </div>
+
+            <div class="blotter-row grid gap-1 sm:grid-cols-[180px_1fr_auto] sm:gap-6 py-5 sm:pt-6 sm:pb-5 border-b border-ink/20" style="--d:0.36s">
+              <p class="font-mono text-[14px]">MON//INDIA</p>
+              <p class="text-[15px] leading-6 text-muted">
+                15 RSS feeds + NSE corporate filings distilled into one ranked
+                queue
+              </p>
+              <p class="font-mono text-[16px] text-ink tabular sm:text-right">
+                Alpha&nbsp;0–100
+              </p>
+            </div>
+          </div>
+
+          <p
+            class="mt-4 font-mono text-[12px] leading-5 text-muted"
+            aria-label="record caveat"
+          >
+            figures measured in backtest, replay, or paper trade. nothing here
+            promises profit.
+          </p>
+        </div>
+      </section>
+
+      <div class="tape-band overflow-hidden bg-tape py-3" aria-hidden="true">
+        <div id="tape-track" class="tape-track py-1"></div>
+      </div>
+
+      <section id="book" class="mx-auto max-w-[1100px] scroll-mt-14 px-5 py-20 sm:px-8">
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">The book</h2>
+        <p class="mt-3 max-w-[64ch] text-muted">
+          Four positions. Each one builds, runs, and reports — the figure on
+          the right is what it measured. Three repos are public; the fourth
+          stays private.
+        </p>
+
+        <article class="border-b border-rule py-12">
+          <div class="grid gap-10 lg:grid-cols-[1fr_auto] lg:gap-14">
+            <div>
+              <h3 class="text-2xl font-bold tracking-tight sm:text-3xl">
+                Bullet
+              </h3>
+              <p class="mt-3 max-w-[62ch] leading-relaxed text-muted">
+                An autonomous memecoin trading bot for the Robinhood Chain, written in Rust.
+              </p>
+              <dl
+                class="mt-7 grid max-w-[62ch] gap-x-10 gap-y-3 font-mono text-[13px] sm:grid-cols-2"
+              >
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">execution</dt>
+                  <dd class="text-right">Rust, autonomous</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">risk</dt>
+                  <dd class="text-right">fail-closed controls</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">build</dt>
+                  <dd class="text-right">19k lines, 214 tests</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">latency</dt>
+                  <dd class="text-right">p95 below one second</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="lg:w-60 lg:flex lg:flex-col lg:items-end lg:text-right">
+              <p class="font-mono text-4xl leading-none text-pnl tabular sm:text-5xl">
+                +$46,931
+              </p>
+              <p class="mt-3 font-mono text-[12px] leading-5 text-muted">
+                782 closed trades, 24 h paper
+              </p>
+              <p class="mt-8 font-mono text-[13px] text-muted">
+                private repo, no public link
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="border-b border-rule py-12">
+          <div class="grid gap-10 lg:grid-cols-[1fr_auto] lg:gap-14">
+            <div>
+              <h3 class="text-2xl font-bold tracking-tight sm:text-3xl">
+                Quant
+              </h3>
+              <p class="mt-3 max-w-[62ch] leading-relaxed text-muted">
+                Pairs-trading research under a real constraint set: ₹15,000 of
+                capital, a 30% flat crypto tax, and no directional market
+                exposure. Only one of eleven screened pairs survived
+                cointegration testing: UNI/SUSHI.
+              </p>
+              <dl
+                class="mt-7 grid max-w-[62ch] gap-x-10 gap-y-3 font-mono text-[13px] sm:grid-cols-2"
+              >
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">screen</dt>
+                  <dd class="text-right">11 pairs → UNI/SUSHI</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">sweep</dt>
+                  <dd class="text-right">1,331 combos, Z-score</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">stance</dt>
+                  <dd class="text-right">market-neutral</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">tax</dt>
+                  <dd class="text-right">30% flat, priced in</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="lg:w-60 lg:flex lg:flex-col lg:items-end lg:text-right">
+              <p class="font-mono text-4xl leading-none text-pnl tabular sm:text-5xl">
+                +461%
+              </p>
+              <p class="mt-3 font-mono text-[12px] leading-5 text-muted">
+                backtested 3 y, 77.6% CAGR
+              </p>
+              <a
+                href="https://github.com/abhiram-k-2223/quant"
+                class="mt-8 inline-block border-b border-ink/35 pb-0.5 font-mono text-[13px] transition-colors hover:border-pnl hover:text-pnl"
+                >github.com/abhiram-k-2223/quant</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="border-b border-rule py-12">
+          <div class="grid gap-10 lg:grid-cols-[1fr_auto] lg:gap-14">
+            <div>
+              <h3 class="text-2xl font-bold tracking-tight sm:text-3xl">
+                AFRDN
+              </h3>
+              <p class="mt-3 max-w-[62ch] leading-relaxed text-muted">
+                An autonomous fraud detection and response network. GraphSAGE
+                embeddings, XGBoost, and a PPO reinforcement layer team up to
+                spot and answer anomalies across the transaction graph in real
+                time, with dashboards stakeholders can actually read.
+              </p>
+              <dl
+                class="mt-7 grid max-w-[62ch] gap-x-10 gap-y-3 font-mono text-[13px] sm:grid-cols-2"
+              >
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">model</dt>
+                  <dd class="text-right">GraphSAGE + XGBoost + PPO</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">respond</dt>
+                  <dd class="text-right">no human in the loop</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">surface</dt>
+                  <dd class="text-right">FastAPI, D3.js</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">scale</dt>
+                  <dd class="text-right">6M+ transactions</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="lg:w-60 lg:flex lg:flex-col lg:items-end lg:text-right">
+              <p class="font-mono text-4xl leading-none text-pnl tabular sm:text-5xl">
+                99%+
+              </p>
+              <p class="mt-3 font-mono text-[12px] leading-5 text-muted">
+                ROC-AUC, 6M+ PaySim transactions
+              </p>
+              <a
+                href="https://github.com/abhiram-k-2223/afrdn"
+                class="mt-8 inline-block border-b border-ink/35 pb-0.5 font-mono text-[13px] transition-colors hover:border-pnl hover:text-pnl"
+                >github.com/abhiram-k-2223/afrdn</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="border-b border-rule py-12">
+          <div class="grid gap-10 lg:grid-cols-[1fr_auto] lg:gap-14">
+            <div>
+              <h3 class="text-2xl font-bold tracking-tight sm:text-3xl">
+                MON//INDIA
+              </h3>
+              <p class="mt-3 max-w-[62ch] leading-relaxed text-muted">
+                An event-driven market intelligence terminal for Indian
+                markets — a research assistant, not a trading bot. It never
+                executes; it tells you what happened and why it might matter,
+                ranked so you read the important part first.
+              </p>
+              <dl
+                class="mt-7 grid max-w-[62ch] gap-x-10 gap-y-3 font-mono text-[13px] sm:grid-cols-2"
+              >
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">ingest</dt>
+                  <dd class="text-right">15 feeds + NSE, daily</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">read</dt>
+                  <dd class="text-right">clusters dupes, ~60 types</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">resolve</dt>
+                  <dd class="text-right">companies → tickers</dd>
+                </div>
+                <div class="flex justify-between gap-4 border-b border-rule pb-2">
+                  <dt class="shrink-0 text-muted">rank</dt>
+                  <dd class="text-right">Event Alpha, 0–100</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="lg:w-60 lg:flex lg:flex-col lg:items-end lg:text-right">
+              <p class="font-mono text-4xl leading-none text-ink tabular sm:text-5xl">
+                0–100
+              </p>
+              <p class="mt-3 font-mono text-[12px] leading-5 text-muted">
+                Event Alpha Score, fully explained
+              </p>
+              <a
+                href="https://github.com/abhiram-k-2223/mon"
+                class="mt-8 inline-block border-b border-ink/35 pb-0.5 font-mono text-[13px] transition-colors hover:border-pnl hover:text-pnl"
+                >github.com/abhiram-k-2223/mon</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section
+        id="record"
+        class="mx-auto max-w-[1100px] scroll-mt-14 border-t border-ink/20 px-5 py-20 sm:px-8"
+      >
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Record</h2>
+        <p class="mt-3 max-w-[64ch] text-muted">
+          Two roles, one degree in the books — and the numbers each produced.
+        </p>
+
+        <ol class="mt-12">
+          <li class="grid gap-1 border-b border-rule py-8 sm:grid-cols-[160px_1fr] sm:gap-10">
+            <p class="font-mono text-[13px] pt-1.5 text-muted">mar 2025 — apr 2026</p>
+            <div>
+              <h3 class="text-xl font-bold tracking-tight">
+                AI/ML Engineer, SCOPE Club, MLRIT
+              </h3>
+              <ul class="mt-4 max-w-[64ch] space-y-2.5 leading-relaxed text-muted">
+                <li>
+                  production RAG chatbot over organizational data with
+                  MiniLM-L6-v2 embeddings and FAISS, cutting retrieval time
+                  ~70%.
+                </li>
+                <li>
+                  FastAPI backend for agent endpoints; vector-index tuning
+                  brought query latency from 100 ms to 5 ms, a 20× cut.
+                </li>
+                <li>
+                  multi-step agentic workflows answering routine queries with
+                  no human gate in the loop.
+                </li>
+                <li>
+                  pandas/NumPy data pipelines trimming data-prep overhead by
+                  ~40%.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="grid gap-1 border-b border-rule py-8 sm:grid-cols-[160px_1fr] sm:gap-10">
+            <p class="font-mono text-[13px] pt-1.5 text-muted">sep 2024 — sep 2025</p>
+            <div>
+              <h3 class="text-xl font-bold tracking-tight">
+                AI/ML Lead, Google Developer Groups on Campus, MLRIT
+              </h3>
+              <ul class="mt-4 max-w-[64ch] space-y-2.5 leading-relaxed text-muted">
+                <li>
+                  mentored 200+ students building with the Gemini API,
+                  LangChain, and Streamlit; 50+ shipped deployed applications.
+                </li>
+                <li>
+                  workshops on agentic AI, LLM integration, and data analysis,
+                  moving students from experiments to production builds.
+                </li>
+                <li>
+                  engagement and attendance reporting in Power BI + SQL that
+                  drove event-planning decisions.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="grid gap-1 border-b border-rule py-8 sm:grid-cols-[160px_1fr] sm:gap-10">
+            <p class="font-mono text-[13px] pt-1.5 text-muted">sep 2022 — jul 2026</p>
+            <div>
+              <h3 class="text-xl font-bold tracking-tight">
+                B.Tech in Computer Science &amp; Engineering, MLRIT
+              </h3>
+              <p class="mt-3 max-w-[64ch] text-muted">
+                graduated july 2026 · CGPA 7.03</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section
+        id="toolchain"
+        class="mx-auto max-w-[1100px] scroll-mt-14 border-t border-ink/20 px-5 py-20 sm:px-8"
+      >
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Toolchain</h2>
+        <p class="mt-3 max-w-[64ch] text-muted">
+          The stack I reach for across agents, models, data, and delivery.
+        </p>
+
+        <dl class="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2">
+          <div>
+            <dt class="font-mono text-[13px] text-muted">agentic ai &amp; llms</dt>
+            <dd class="mt-2 max-w-[46ch] leading-relaxed">
+              LangChain, LangGraph, RAG pipelines, Hugging Face, Ollama,
+              llama.cpp, FAISS, embeddings, prompt engineering
+            </dd>
+          </div>
+          <div>
+            <dt class="font-mono text-[13px] text-muted">machine learning &amp; rl</dt>
+            <dd class="mt-2 max-w-[46ch] leading-relaxed">
+              Scikit-Learn, XGBoost, TensorFlow, GraphSAGE, PPO, reinforcement
+              learning
+            </dd>
+          </div>
+          <div>
+            <dt class="font-mono text-[13px] text-muted">data analysis</dt>
+            <dd class="mt-2 max-w-[46ch] leading-relaxed">
+              Python (pandas, NumPy, Matplotlib, Seaborn), SQL (MySQL,
+              PostgreSQL), Power BI, advanced Excel
+            </dd>
+          </div>
+          <div>
+            <dt class="font-mono text-[13px] text-muted">apis &amp; deployment</dt>
+            <dd class="mt-2 max-w-[46ch] leading-relaxed">
+              FastAPI, Flask, REST, Streamlit, D3.js, GCP, OCI, Oracle Data
+              Science, Docker
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section
+        id="desk"
+        class="mx-auto max-w-[1100px] scroll-mt-14 border-t border-ink/20 px-5 py-20 sm:px-8"
+      >
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">The desk</h2>
+        <p class="mt-3 max-w-[64ch] text-muted">
+          Open to AI/ML, data, and quant engineering roles. If your team runs
+          autonomous systems and wants them measured properly, this is the
+          place to reach me.
+        </p>
+
+        <div class="mt-10 flex flex-wrap items-center gap-5">
+          <a
+            href="mailto:abhiramk2305@gmail.com"
+            class="bg-ink px-6 py-3 text-[15px] font-semibold text-paper transition-colors hover:bg-pnl"
+            >email me</a
+          >
+          <a
+            href="https://github.com/abhiram-k-2223"
+            class="border-b border-ink/35 pb-0.5 font-mono text-[14px] transition-colors hover:border-pnl hover:text-pnl"
+            >github.com/abhiram-k-2223</a
+          >
+          <a
+            href="https://www.linkedin.com/in/abhiram-kamsali-6ba7a0256/"
+            class="border-b border-ink/35 pb-0.5 font-mono text-[14px] transition-colors hover:border-pnl hover:text-pnl"
+            >linkedin.com/in/abhiram-kamsali-6ba7a0256</a
+          >
+        </div>
+      </section>
+
+      <footer class="mx-auto max-w-[1100px] px-5 pb-12 sm:px-8">
+        <div class="border-t border-rule pt-6">
+          <p class="font-mono text-[12px] leading-6 text-muted">
+            © <span id="year">2026</span> Abhiram Kamsali, Hyderabad, India.
+            built with Tailwind CSS, set in Schibsted Grotesk and Fragment Mono.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
