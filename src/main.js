@@ -36,7 +36,7 @@ const tapeItems = [
   { t: 'query latency 100 ms to 5 ms, 20x', g: false },
   { t: 'retrieval time down ~70%', g: false },
   { t: '214 passing tests, 19k lines of Rust', g: false },
-  { t: 'fail-closed risk controls', g: false },
+  { t: 'fail-closed risk controls, no human in the loop', g: false },
 ]
 
 const track = document.getElementById('tape-track')
