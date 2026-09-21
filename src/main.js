@@ -28,7 +28,7 @@ if (themeToggle) {
 }
 
 const tapeItems = [
-  { t: 'seed $2,000 to +$72,818, 1,504 trades, one week', g: true },
+  { t: 'seed $2,000 to +$72,818, 2,880 trades, one week', g: true },
   { t: '65.6% of closed tokens green', g: false },
   { t: '1,331 parameter combos swept', g: false },
   { t: '+461% over 3 y, 77.6% CAGR', g: true },
