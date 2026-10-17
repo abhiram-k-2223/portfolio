@@ -67,6 +67,28 @@
     font-size: 17px;
   }
 
+  p {
+    text-wrap: pretty;
+  }
+
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* theme flip eases instead of jumping to the new brightness */
+  @media (prefers-reduced-motion: no-preference) {
+    *,
+    *::before,
+    *::after {
+      transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        fill 0.25s ease;
+    }
+  }
+
   ::selection {
     background: var(--color-ink);
     color: var(--color-paper);
@@ -89,6 +111,56 @@
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
     }
+  }
+}
+
+/* ------------------------------------------------------------
+   Press feedback — responds on pointer-down, not release
+   ------------------------------------------------------------ */
+a[href]:active,
+button:active {
+  opacity: 0.65;
+}
+
+.cta:active {
+  transform: scale(0.97);
+  transition: transform 100ms ease-out;
+}
+
+/* header links keep their place but gain a ~40px hit area */
+header a,
+header button {
+  padding-block: 0.7rem;
+}
+
+/* ------------------------------------------------------------
+   Header as floating chrome — solid at rest, translucent
+   material once content scrolls beneath it
+   ------------------------------------------------------------ */
+header {
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+header.is-scrolled {
+  border-bottom-color: transparent;
+  background: color-mix(in srgb, var(--c-paper) 76%, transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(1.5);
+  backdrop-filter: blur(18px) saturate(1.5);
+  box-shadow:
+    0 1px 0 color-mix(in srgb, var(--c-ink) 10%, transparent),
+    0 12px 28px -16px color-mix(in srgb, var(--c-ink) 24%, transparent);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  header.is-scrolled {
+    background: var(--c-paper);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
+    border-bottom-color: var(--c-rule);
   }
 }
 

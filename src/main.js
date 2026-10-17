@@ -3,6 +3,22 @@ if (year) year.textContent = String(new Date().getFullYear())
 
 const root = document.documentElement
 
+// header is solid at rest; once content scrolls under it, it becomes
+// translucent chrome (border swap + blur handled in CSS)
+const header = document.querySelector('header')
+if (header) {
+  let scrolled = false
+  const syncHeader = () => {
+    const on = window.scrollY > 8
+    if (on !== scrolled) {
+      header.classList.toggle('is-scrolled', on)
+      scrolled = on
+    }
+  }
+  addEventListener('scroll', syncHeader, { passive: true })
+  syncHeader()
+}
+
 const themeToggle = document.getElementById('theme-toggle')
 const themeColor = document.querySelector('meta[name="theme-color"]')
 
